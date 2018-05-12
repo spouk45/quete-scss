@@ -1,0 +1,174 @@
+section#MyRings {
+  font-size: 3em;
+}
+section#MyRings .row {
+  margin: 40px;
+}
+
+.framed::after, .framed::before {
+  content: "";
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.framed {
+  margin: auto;
+}
+.framed::before {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: calc( 70px * 0.08);
+  border-style: solid;
+  border-color: #f03e00;
+  box-shadow: calc( 70px * 0.1) calc(70px * 0.1) calc(70px * 0.1) #8a2400, inset calc( 70px * 0.1) calc(70px * 0.1) calc(70px * 0.1) #8a2400;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+}
+.framed::after {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: calc( 70px * 0.08);
+  border-style: solid;
+  border-color: #f03e00;
+  box-shadow: calc( 70px * 0.1) calc(70px * 0.1) calc(70px * 0.1) #8a2400, inset calc( 70px * 0.1) calc(70px * 0.1) calc(70px * 0.1) #8a2400;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+}
+
+.ring {
+  width: 210px;
+  height: 210px;
+  border-radius: 100%;
+  border: calc( 210px * 0.08);
+  border-style: solid;
+  border-color: yellow;
+  box-shadow: calc( 210px * 0.1) calc(210px * 0.1) calc(210px * 0.1) #999900, inset calc( 210px * 0.1) calc(210px * 0.1) calc(210px * 0.1) #999900;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+}
+
+section {
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center {
+  display: inline-block;
+  margin: auto;
+}
+
+.rings-1 {
+  width: calc( 50px + ( 10px * 1 ) + 0px );
+  height: calc( 50px + ( 10px * 1 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 1 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 1 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 1 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 1 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 1 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 1 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 1 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 1 ) + 0px ) * 1 * 0.5);
+}
+
+.rings-2 {
+  width: calc( 50px + ( 10px * 2 ) + 0px );
+  height: calc( 50px + ( 10px * 2 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 2 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 2 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 2 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 2 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 2 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 2 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 2 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 2 ) + 0px ) * 2 * 0.5);
+}
+
+.rings-3 {
+  width: calc( 50px + ( 10px * 3 ) + 0px );
+  height: calc( 50px + ( 10px * 3 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 3 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 3 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 3 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 3 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 3 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 3 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 3 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 3 ) + 0px ) * 3 * 0.5);
+}
+
+.rings-4 {
+  width: calc( 50px + ( 10px * 4 ) + 0px );
+  height: calc( 50px + ( 10px * 4 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 4 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 4 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 4 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 4 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 4 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 4 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 4 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 4 ) + 0px ) * 4 * 0.5);
+}
+
+.rings-5 {
+  width: calc( 50px + ( 10px * 5 ) + 0px );
+  height: calc( 50px + ( 10px * 5 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 5 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 5 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 5 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 5 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 5 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 5 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 5 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 5 ) + 0px ) * 5 * 0.5);
+}
+
+.rings-6 {
+  width: calc( 50px + ( 10px * 6 ) + 0px );
+  height: calc( 50px + ( 10px * 6 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 6 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 6 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 6 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 6 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 6 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 6 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 6 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 6 ) + 0px ) * 6 * 0.5);
+}
+
+.rings-7 {
+  width: calc( 50px + ( 10px * 7 ) + 0px );
+  height: calc( 50px + ( 10px * 7 ) + 0px );
+  border-radius: 100%;
+  border: calc( calc( 50px + ( 10px * 7 ) + 0px ) * 0.08);
+  border-style: solid;
+  border-color: grey;
+  box-shadow: calc( calc( 50px + ( 10px * 7 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 7 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 7 ) + 0px ) * 0.1) #4d4d4d, inset calc( calc( 50px + ( 10px * 7 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 7 ) + 0px ) * 0.1) calc(calc( 50px + ( 10px * 7 ) + 0px ) * 0.1) #4d4d4d;
+  background-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: absolute;
+  left: calc( calc( 50px + ( 10px * 7 ) + 0px ) * 7 * 0.5);
+}
+
+.ringGroup {
+  margin-top: 80px;
+}
+.ringGroup > div {
+  position: relative;
+  left: -100px;
+}
+.ringGroup > p {
+  margin-top: 60px;
+}

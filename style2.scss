@@ -1,0 +1,97 @@
+section#MyRings {
+  .row {
+    margin:40px;
+  }
+  font-size: 3em;
+}
+
+@mixin ring($color, $size){
+  width:$size;
+  height:$size;
+  border-radius: 100%;
+  border: calc( #{$size} * 0.08);
+  border-style:solid;
+  border-color:$color;
+  box-shadow: calc( #{$size} * 0.1) calc(#{$size} * 0.1)  calc(#{$size} * 0.1) darken($color,20%),
+  inset calc( #{$size} * 0.1) calc(#{$size} * 0.1)  calc(#{$size} * 0.1) darken($color,20%);
+  background-color: rgba(255,255,255,0);
+  display:inline-block;
+}
+
+%BA{
+  content:"";
+  vertical-align:middle;
+  margin:10px;
+}
+@mixin ringBA($color,$size){
+  &::before{
+    @include ring($color,$size);
+    @extend %BA;
+  }
+
+  &::after{
+    @include ring($color,$size);
+    @extend %BA;
+  }
+
+}
+
+$color1: #f03e00;
+$color2: yellow;
+
+.framed{
+  @include ringBA($color1,70px);
+  margin:auto;
+}
+
+.ring{
+  @include ring($color2,210px);
+
+}
+
+section{
+  text-align:center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center{
+  display:inline-block;
+  margin:auto;
+}
+
+
+
+$count : 0px ;
+@for $i from 1 through 7{
+  .rings-#{$i}{
+    $count : calc( 50px + ( 10px * #{$i} )  + #{$count} );
+    @include ring(grey, $count );
+    position:absolute;
+    left:calc(  #{$count}  * #{$i} * 0.5) ;
+
+
+  }
+
+}
+
+.ringGroup{
+  margin-top:80px;
+
+  > div {
+    position:relative;
+    left:-100px;
+
+  }
+
+  > p{
+    margin-top:60px;
+  }
+
+
+
+}
